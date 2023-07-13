@@ -1,0 +1,31 @@
+body{
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+}
+
+pre{
+    font-size: monospace;
+    font-size: 10px;
+}
+
+.donut-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.changeColor{
+    animation: 2.5s infinite alternate ease-out breathing-color--dark;;
+}
+
+@keyframes breathing-color--dark {
+    from {
+        color: red;
+    }
+    to {
+        color: hsl(99, 86%, 67%);
+    }
+}
